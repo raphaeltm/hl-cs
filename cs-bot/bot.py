@@ -386,6 +386,5 @@ async def rescou(interaction: discord.Interaction, user: discord.Member):
                 ro.seek(0)
                 ro.writelines(lines)
     return await interaction.response.send_message(content=f"{user.name}'s offense count has been reset", ephemeral=True)
-
 token = os.getenv("DISCORD_BOT_TOKEN")
 bot.run(str(token))
